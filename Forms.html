@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Create Your Account</h2>
+
+<form action="Data.htm" target= "_blank" method="post" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+	<fieldset style="background-color: lightgray;" >
+		<legend>Personal Information</legend>
+	<label for="fname">First Name:</label><br>
+	<input type="text" id= "fname" ><br>
+	<label for="lname">Last Name:</label><br>
+	<input type="text" id= "lname" name=""><br>
+	<label for="pnum">Phone Number:</label><br>
+	<input type="text" id= "pnum" name=""><br>
+	<label for="email">Email Address:</label><br>
+	<input type="text" id= "email" name=""><br><br>
+  	<input type="radio" id="male" name="gender" value="male">
+  	<label for="male">Male</label><br>
+  	<input type="radio" id="female" name="gender" value="female">
+ 	<label for="female">Female</label><br>
+  	<input type="radio" id="other" name="gender" value="other">
+  	<label for="other">Other</label><br>
+  	<h2>Please Check all that apply</h2>
+  	<input type="Checkbox" id = "empl" name="">
+  	<label for="empl">Employed</label><br>
+  	<input type="Checkbox" id= "unemp"name="">
+  	<label for="unemp">Unemployed</label><br>
+  	<input type="Checkbox" id= "stud" name="">
+  	<label for="stud">Student</label><br>
+  	<br>
+  	<label for="rel">Religion</label>
+  	<select id="rel" name="Religion">
+  		<option value="catholic">Catholic</option>
+  		<option value="christian">Christian</option>
+  		<option value="islam">Islam</option>
+  		<option value="hindu">Hindu</option>
+  	</select><br><br>
+  	<label for="birthday">Birthday</label>
+  	<input type="date" id ="birthday" name="birthday">
+  	<br><br>
+  	<h2>Zodiac Sign</h2>
+  	<input list="zodiac-sign" name="zodiac">
+  		<datalist id="zodiac-sign">
+  				<option value="Libra">
+				<option value="Scoripo">
+  				<option value="Leo">	
+  				<option value="Virgo">
+  		</datalist>
+  		<br><br>
+  	<h2>What is you favorite color?</h2>
+  	<label for="favcolor">Select your favorite color </label>
+  	<input type="color" name ="favcolor"id="favcolor">
+  	<br><br>
+
+  	<h2>Solve this</h2>
+  <input type="range" id="a" name="a" value="50">
+  100 +
+  <input type="number" id="b" name="b" value="50">
+  =
+  <output name="x" for="a b"></output>
+  <br><br>
+
+  	<h2>Describe yourself.</h2>
+  	<textarea name="message" rows="10" cols="30">This is where you enter your comment.</textarea>
+  	<br><br>
+	<input type="Submit" name="Submit"><br>
+	</fieldset>
+</form>
+
+
+
+</body>
+</html>
